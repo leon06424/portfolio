@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{font-family: 'Archivo Black', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;}
+
+li {
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+}
+
+nav ul {
+    width: 1500px;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul img {
+    width: 220px;
+    padding: 0 50px 0 100px;
+}
+
+nav ul li {
+    width: 140px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+nav ul li:nth-child(5) {
+    width: 200px;
+}
+
+nav ul li:last-child {
+    padding-right: 0px;
+}
+
+.container1 {
+    width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+    
+    background: url(./img/main.jpg) no-repeat;
+    background-origin: content-box;
+    background-position: center center;
+    background-size: cover;
+    word-break: normal;
+    
+    align-items: center;
+
+    border: 1px solid #fff; /*왜 보더를 빼면 이미지가 밑으로 내려가지..?*/
+}
+.container1 h1{margin-top: 90px; margin-right: 50px; font-size: 60px; text-align: right; line-height: 70px; font-family: Archivo Black;}
+.container1 h2{margin-top: 45px; margin-right: 50px; text-align: right; }
+.container1 p{width: 280px; margin-top: 20px; margin-right: 50px; text-align: justify; float: right; }
+
+
+.container2{width: 1100px; height: 800px; margin: 0 auto;}
+.container2 h1{font-size: 30px; margin-top: 50px;}
+.container2 ul{display: flex; justify-content: space-around;}
+.container2 ul li{margin: 20px 50px 0px 0; line-height: 30px; text-align: center;}
+.container2 ul li:last-child{margin-right: 0;}
+.bean{padding: 30px;
+    border-width: 1px 1px 0px 1px ;
+    border-style: solid;
+    border-color: #bebebe;}
+.bean.top1{padding: 120px 0 50px 0;
+background: url(./img/ico_64_coffee_black.svg) no-repeat;
+background-size: auto;
+background-position: center 50px;
+letter-spacing: 0.5px;
+}
+.bean.top1 span{color: gray; font-size: 17px; }
+.bean.top2{padding: 120px 0 50px 0;
+background: url(./img/ico_64_coffee_aroma.svg) no-repeat;
+background-size: auto;
+background-position: center 50px;
+letter-spacing: 0.5px;
+}
+.bean.top2 span{color: rgb(255, 72, 0); font-size: 17px; }
+.bean.top3{padding: 120px 0 50px 0;
+background: url(./img/ico_64_coffee_swp.svg) no-repeat;
+background-size: auto;
+background-position: center 50px;
+letter-spacing: 0.5px;
+}
+.bean.top3 span{color: rgb(0, 81, 255); font-size: 17px; }
+.bean.bottom{border: 1px solid #bebebe; text-align: center; }
+.bean.bottom p{text-align: center; letter-spacing: -1px;}
+.bean.bottom h3{font-weight: 800; margin-bottom: 20px;}
+.roast{letter-spacing: 1px; }
+.bean.bottom span{padding: 0 10px 0 0px; color: red; font-weight: 800;}
+
+.container3{    
+    width: 1100px;
+    height: 300px;
+    line-height: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    background: url(./img/banner2.jpg) no-repeat;
+    background-origin: content-box;
+    background-position: center center;
+    background-size: cover;
+    word-break: normal;
+   
+    text-align: justify;
+    font-size: ;
+    
+    align-items: center;
+}
+    .container3 h1{font-size: 35px; margin: 0 200px; color: white;}
+
+
+    .container4{width: 1100px; height: 700px; margin: 0 auto;}
+    .container4 h1{font-size: 30px; margin-top: 50px;}
+    .container4 ul{display: flex; justify-content: space-evenly; margin-top: 5px; position: relative;}
+    .container4 ul li{margin: 0 17px; line-height: 30px; text-align: justify; line-height: 25px; letter-spacing: -1px;}
+    .container4 ul li div p{padding: 0 10px 0px 10px ;}
+    .container4 ul li div h2{padding: 0 10px 0px 10px ; font-size: 22px;}
+    .container4 ul li img{width: 250px;}
+.middle{width: 250px; height: 70px; margin-top: 15px;  }
+span{font-size: 15px; color: gray;}
+.ex span{font-size: 13px; color: gray;}
+.container4 ul li:first-child p:last-child{margin-top: 15px;}
+.container4 ul li:nth-child(2) p:last-child{margin-top: 15px;}
+.container4 ul li:nth-child(1) div:first-child p{width: 70px; position: absoulte; top: 500px; transform: translate(0%, 150%); background-color: black; color: white; font-weight: 800; padding: 0 0 3px 10px;}
+.container4 ul li:nth-child(2) div:first-child p{width: 70px; position: absoulte; top: 500px; transform: translate(0%, 150%); background-color: black; color: white; font-weight: 800; padding: 0 0 3px 10px;}
+.container4 ul li:nth-child(3) div:first-child p{width: 85px; position: absoulte; top: 500px; transform: translate(0%, 150%); background-color: black; color: white; font-weight: 800; padding: 0 0 2px 10px;}
+.container4 ul li:nth-child(4) div:first-child p{width: 85px; position: absoulte; top: 500px; transform: translate(0%, 150%); background-color: black; color: white; font-weight: 800; padding: 0 0 2px 10px;}
+
+
+footer{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(22, 22, 22);
+    color: gray;
+    letter-spacing: -1px;
+}
+
+footer .top{width: 1100px; height: 220px; margin: 0 auto;}
+footer .top h2{width: 300px; color: white;}
+footer .top div{width: 600px;}
+footer .top span{font-weight: 800; color: white;}
+.top .top_1{display: flex; justify-content: space-between;
+    padding: 50px 0 ;}
+.top .top_1 li:first-child{line-height: 40px;}
+.top .top_1 li:last-child div{line-height: 30px;}
+.top_1 li:last-child div ul li:first-child{line-height: 30px;}
+
+footer .bottom{width: 1100px; height: 200px; margin: 0 auto; }
+footer .bottom ul{display: flex;}
+footer .bottom ul li{font-size: 15px; font-weight: 800; padding: 30px 50px 30px 0px; color: white;}
+footer .bottom ul li span{font-size: 14px; font-weight: 800; color: rgb(255, 230, 0);}
+footer .bottom p{font-size: 14px; line-height: 30px;}
