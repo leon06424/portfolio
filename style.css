@@ -562,7 +562,7 @@ section {
     }
 
     .slide_next_button,
-    .slide_next {
+    .slick-next {
         right: 4%;
     }
 
@@ -650,13 +650,13 @@ section {
         }
     }
 
-    .slide_prev_button, 
-    .slide_prev {
+    .slick-prev_button, 
+    .slick-prev {
         left: 20px;
     }
 
     .slide_next_button,
-    .slide_next {
+    .slick-next {
         right: 20px;
     }
 }
@@ -1147,12 +1147,12 @@ section {
     }
 
     .slide_prev_button,
-    .slide_prev {
+    .slick-prev {
         left: 15px;
     }
 
     .slide_next_button,
-    .slide_next {
+    .slick-next {
         right: 15px;
     }
 }
