@@ -584,7 +584,7 @@ section {
     }
 
     /* 슬라이더 */
-    .slide_item.item1 img,
+    /* .slide_item.item1 img,
     .slide_item.item2 img,
     .slide_item.item3 img,
     .slide_item.item4 img,
@@ -596,7 +596,7 @@ section {
         right: 4%;
         top: 0;
         object-fit: contain;
-    }
+    } */
 
     .slide_txt {
         width: 38%;
@@ -1326,14 +1326,14 @@ section {
         font-size: 13px;
     }
 
-    .slide_item.item1 img,
+    /* .slide_item.item1 img,
     .slide_item.item2 img,
     .slide_item.item3 img,
     .slide_item.item4 img,
     .slide_item.item5 img,
     .slide_item.item6 img {
         height: 280px;
-    }
+    } */
 
     .slide_prev_button,
     .slide_next_button {
