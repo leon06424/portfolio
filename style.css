@@ -1143,7 +1143,7 @@ section {
         height: 150px;
         position: relative;
         bottom: auto;
-        background-size: cover;
+        background-size: contain;
     }
 
     address {
