@@ -214,8 +214,7 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
     overflow: hidden;
     flex-shrink: 0;
     position: relative;
-    display: flex;
-    justify-content: center;
+
 }
 
 /* 긴 상세페이지 이미지 */
