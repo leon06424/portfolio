@@ -880,6 +880,10 @@ section {
         height: 55px;
         font-size: 14px;
     }
+    ul.tab_menu li.on{
+      border-right: 1px solid #f4d284 !important;
+      border-bottom: 0 !important;
+    }
 
     ul.tab_con {
         width: 100%;
