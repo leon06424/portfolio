@@ -317,22 +317,26 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
 .slick-arrow { z-index: 100; position: absolute; top: 50%; transform: translateY(-50%); }
 /* Slick 이전 버튼 */
 .your-class .slick-prev {
-    left: 10px;
+    left: 100px;
     z-index: 10;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     background: url("./img/prev.png") no-repeat center center !important;
     background-size: contain !important;
+    font-size: 0 !important;
+    border: 0;
 }
 
 /* Slick 다음 버튼 */
 .your-class .slick-next {
-    right: 10px;
+    right: 100px;
     z-index: 10;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     background: url("./img/next.png") no-repeat center center !important;
     background-size: contain !important;
+    font-size: 0 !important;
+    border: 0;
 }
 
 /* Slick 기본 화살표 모양 제거 */
