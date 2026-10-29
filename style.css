@@ -318,8 +318,45 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
 .pop{display: none; width: 600px; height: 800px; background-color: lightblue; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 8888;}
 .close{width: 50px; height: 25px; position: absolute; top: 10px; right: -180px; border: 1px solid #333; border-radius: 5px; text-align: center; background-color: #f4e3dc;}
 .slick-arrow { z-index: 100; position: absolute; top: 50%; transform: translateY(-50%); }
-.slick-prev { left: 100px;}
-.slick-next { right: 100px;}
+/* Slick 이전 버튼 */
+.your-class .slick-prev {
+    left: 10px;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: url("./img/prev.png") no-repeat center center;
+    background-size: contain;
+}
+
+/* Slick 다음 버튼 */
+.your-class .slick-next {
+    right: 10px;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: url("./img/next.png") no-repeat center center;
+    background-size: contain;
+}
+
+/* Slick 기본 화살표 모양 제거 */
+.your-class .slick-prev::before,
+.your-class .slick-next::before {
+    display: none;
+    content: "";
+}
+
+/* 마우스 호버 시에도 이미지 유지 */
+.your-class .slick-prev:hover,
+.your-class .slick-prev:focus {
+    background: url("./img/prev.png") no-repeat center center;
+    background-size: contain;
+}
+
+.your-class .slick-next:hover,
+.your-class .slick-next:focus {
+    background: url("./img/next.png") no-repeat center center;
+    background-size: contain;
+}
 
 /* 자세히 보기 모달창 */
 .image_modal {
@@ -605,10 +642,10 @@ section {
         margin-left: 0;
     }
     .slick-prev{
-      left: 0%;
+      left: 4%;
     }
     .slick-next {
-      right: 0%;
+      right: 4%;
     }
 
     /* 푸터 */
@@ -675,6 +712,13 @@ section {
 
     .slide_next_button {
         right: 20px;
+    }
+
+    .slick-prev{
+      left: 20px;
+    }
+    .slick-next {
+      right: 20px;
     }
 }
 
@@ -958,6 +1002,7 @@ section {
         right: calc(50% - 70px);
     } */
 
+
     .slide_pagination {
         bottom: 0;
     }
@@ -991,7 +1036,11 @@ section {
         margin: 0;
         font-size: 13px;
     }
-
+    .slick-prev,
+    .slick-next {
+      width: 55px;
+      height: 55px;
+    }
     /* 모달 */
     .image_modal {
         padding: 15px;
@@ -1170,6 +1219,13 @@ section {
     .slide_next_button {
         right: 15px;
     }
+
+    .slick-prev{
+      left: 15px;
+    }
+    .slick-next {
+      right: 15px;
+    }
 }
 
 
@@ -1293,7 +1349,11 @@ section {
     .slide_next {
         right: calc(50% - 55px);
     } */
-
+    .slick-prev,
+    .slick-next {
+      width: 42px;
+      height: 42px;
+    }
     /* 그래픽 카드를 한 줄에 하나씩 */
     .your-class {
         display: flex;
