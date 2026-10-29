@@ -1359,8 +1359,8 @@ section {
     } */
     .your-class .slick-prev,
     .your-class .slick-next {
-      width: 42px;
-      height: 42px;
+      width: 42px !important;
+      height: 42px !important;
     }
     /* 그래픽 카드를 한 줄에 하나씩 */
     .your-class {
