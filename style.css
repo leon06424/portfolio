@@ -418,6 +418,9 @@ section {
 @media (max-width: 1200px) {
 
     /* 메인 타이틀 */
+    .main{
+      padding: 70px 5%;
+    }
     .main h1 {
         font-size: clamp(80px, 14vw, 160px);
         line-height: 1;
@@ -608,6 +611,51 @@ section {
     }
 }
 
+/* =========================
+   태블릿: 1024px 이하
+========================= */
+@media (max-width: 1024px) {
+    .slide_item {
+        gap: 30px;
+        padding: 25px;
+        height: 650px;
+    }
+
+    .slide_item .img_box {
+        width: 60%;
+        height: 480px;
+    }
+
+    .slide_item .slide_txt {
+        width: 260px;
+        max-width: 38%;
+    }
+
+    .slide_item .slide_txt h4 {
+        font-size: 18px;
+    }
+
+    .slide_item .slide_txt p {
+        font-size: 14px;
+    }
+
+    @keyframes slideAnimation {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(calc(-100% + 480px));
+        }
+    }
+
+    .slide_prev_button {
+        left: 20px;
+    }
+
+    .slide_next_button {
+        right: 20px;
+    }
+}
 
 /* ========================================
    태블릿: 768px 이하
@@ -675,7 +723,9 @@ section {
     .main_logo {
         min-height: 250px;
     }
-
+    .main{
+      padding: 35px 5%;
+    }
     .main h1 {
         font-size: clamp(48px, 12vw, 90px);
         letter-spacing: -0.07em;
@@ -834,7 +884,7 @@ section {
     .slide_txt p,
     .slide_txt .port_btn {
         position: static;
-        margin: 12px 0;
+        /* margin: 12px 0; */
     }
 
     .slide_txt h4 {
@@ -879,13 +929,13 @@ section {
         bottom: 15px;
     }
 
-    .slide_prev_button {
+    /* .slide_prev_button {
         left: calc(50% - 70px);
     }
 
     .slide_next_button {
         right: calc(50% - 70px);
-    }
+    } */
 
     .slide_pagination {
         bottom: 0;
@@ -915,6 +965,8 @@ section {
 
     .port_btn a {
         display: inline-block;
+        width: auto;
+        height: auto;
         margin: 0;
         font-size: 13px;
     }
@@ -1036,6 +1088,67 @@ section {
         text-align: center;
         font-size: 12px;
     }
+
+    .slide_item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        min-height: 650px;
+        padding: 30px 20px 100px;
+    }
+
+    .slide_item .img_box {
+        width: 100%;
+        max-width: 500px;
+        height: 350px;
+        flex-shrink: 0;
+    }
+
+    .slide_item .slide_txt {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .slide_item .slide_txt h4 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .slide_item .slide_txt p {
+        font-size: 14px;
+    }
+
+    /* 모바일에서는 호버 대신 이미지 터치 시에도 동작하도록 */
+    .slide_item .img_box:hover img,
+    .slide_item .img_box:active img {
+        animation: slideAnimation 6s linear forwards;
+    }
+
+    @keyframes slideAnimation {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(calc(-100% + 350px));
+        }
+    }
+
+    .slide_button {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        background-size: contain;
+    }
+
+    .slide_prev_button {
+        left: 15px;
+    }
+
+    .slide_next_button {
+        right: 15px;
+    }
 }
 
 
@@ -1056,7 +1169,9 @@ section {
         min-height: 180px;
         padding: 15px 10px 25px;
     }
-
+    .main{
+      padding: 25px 4%;
+    }
     .main h1 {
         font-size: clamp(38px, 11vw, 55px);
         letter-spacing: -0.06em;
@@ -1192,5 +1307,41 @@ section {
 
     .bottom_logo {
         height: 100px;
+    }
+
+    .slide_item {
+        gap: 15px;
+        padding: 20px 15px 85px;
+        min-height: 550px;
+    }
+
+    .slide_item .img_box {
+        height: 280px;
+    }
+
+    .slide_item .slide_txt h4 {
+        font-size: 16px;
+    }
+
+    .slide_item .slide_txt p {
+        font-size: 12px;
+    }
+
+    .slide_item .slide_txt .port_btn a {
+        font-size: 13px;
+    }
+
+    .slide_button {
+        width: 35px;
+        height: 35px;
+    }
+
+    @keyframes slideAnimation {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(calc(-100% + 280px));
+        }
     }
 }
