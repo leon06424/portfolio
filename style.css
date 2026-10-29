@@ -217,6 +217,8 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
     overflow: hidden;
     flex-shrink: 0;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 /* 긴 상세페이지 이미지 */
@@ -444,7 +446,6 @@ section {
     .main_logo {
         height: auto;
         min-height: 300px;
-        padding-bottom: 40px;
     }
 
     /* ABOUT */
@@ -1187,7 +1188,6 @@ section {
 
     .main_logo {
         min-height: 180px;
-        padding: 15px 10px 25px;
     }
     .main{
       padding: 25px 4%;
