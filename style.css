@@ -323,8 +323,6 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
     height: 100px;
     background: url("./img/prev.png") no-repeat center center !important;
     background-size: contain !important;
-    font-size: 0 !important;
-    border: 0;
 }
 
 /* Slick 다음 버튼 */
@@ -335,8 +333,7 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
     height: 100px;
     background: url("./img/next.png") no-repeat center center !important;
     background-size: contain !important;
-    font-size: 0 !important;
-    border: 0;
+
 }
 
 /* Slick 기본 화살표 모양 제거 */
