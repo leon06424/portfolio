@@ -75,7 +75,7 @@ ul.tab_menu{ width: 150px; height: 100%;
   /* position: absolute; left: 210px; */
 }
 ul.tab_menu li{width: 150px; height: 33.3333%; line-height: 150px; background: #f4d284; text-align: center; border-right: 0; box-sizing: border-box; color: #fff; cursor: pointer;}
-ul.tab_menu li.on{background: #fff; color: #f4d284; border: 1px solid #f4d284; border-right: 0;}
+ul.tab_menu li.on{background: #fff; color: #f4d284; border: 1px solid #f4d284; border-right: 0; border-left: 0;}
 ul.tab_con{width: 100%; height: 500px; box-sizing: border-box; border:1px solid #f4d284; font-size: 16px; text-align: center; line-height: 20px;  
   /* position: absolute; top: 0; left: 359px; */
  }
@@ -145,7 +145,7 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
     position: absolute;
     /* 버튼이 중앙에 위치하게 하기위해 계산 
     top: calc(50% - 16px);*/
-    bottom: 50px;
+    bottom: 42%;
   
     /* size */
     width: 100px;
@@ -269,7 +269,7 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
   }
   .slide_pagination > li {
     /* 현재 슬라이드가 아닌 것은 투명도 부여 */
-    color: rgba(159, 214, 205, 0.6);
+    color: rgba(159, 214, 205, 0.3);
     cursor: pointer;
     font-size: 25px;
   }
@@ -315,7 +315,7 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
 .port_btn a{width: 10px; height: 10px; line-height: 10px; font-size: 14px; border: 1px solid #333; padding: 3px 10px; border-radius: 5px; text-decoration: none; color: #333;}
 .pop{display: none; width: 600px; height: 800px; background-color: lightblue; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 8888;}
 .close{width: 50px; height: 25px; position: absolute; top: 10px; right: -180px; border: 1px solid #333; border-radius: 5px; text-align: center; background-color: #f4e3dc;}
-.slick-arrow { z-index: 100; position: absolute; top: 50%; transform: translateY(-50%); }
+.slick-arrow { z-index: 100; position: absolute; top: 50%; transform: translateY(-50%); font-size: 0; border: 0;}
 /* Slick 이전 버튼 */
 .your-class .slick-prev {
     left: 100px;
@@ -480,8 +480,7 @@ section {
     }
 
     .main_logo {
-        height: auto;
-        min-height: 300px;
+        height: 300px;
     }
 
     /* ABOUT */
@@ -562,6 +561,7 @@ section {
         align-items: center;
         justify-content: center;
     }
+    ul.tab_menu li.on{border-right: 1px solid #f4d284;}
 
     ul.tab_con {
         width: calc(100% - 150px);
@@ -576,6 +576,7 @@ section {
         width: 90%;
         font-size: clamp(48px, 8vw, 80px);
         overflow-wrap: anywhere;
+        text-align: center;
     }
 
     .port_navi ul {
@@ -707,10 +708,12 @@ section {
         }
     }
 
+    .slide_button{
+      bottom: 10%;
+    }
     .slick-prev_button {
         left: 20px;
     }
-
     .slide_next_button {
         right: 20px;
     }
@@ -787,7 +790,7 @@ section {
     }
 
     .main_logo {
-        min-height: 250px;
+        height: 250px;
     }
     .main{
       padding: 35px 5%;
@@ -1045,8 +1048,8 @@ section {
     }
     .your-class .slick-prev,
     .your-class .slick-next {
-      width: 55px !important;
-      height: 55px !important;
+      width: 45px !important;
+      height: 45px !important;
     }
     /* 모달 */
     .image_modal {
@@ -1132,6 +1135,7 @@ section {
     }
 
     .foot_right > ul {
+        width: 80%;
         flex-wrap: wrap;
         gap: 5px;
     }
@@ -1218,7 +1222,7 @@ section {
     .slide_button {
         width: 45px;
         height: 45px;
-        bottom: 20px;
+        bottom: 18%;
         background-size: contain;
     }
 
@@ -1253,7 +1257,7 @@ section {
     }
 
     .main_logo {
-        min-height: 180px;
+        height: 180px;
     }
     .main{
       padding: 25px 4%;
@@ -1379,7 +1383,16 @@ section {
         height: auto;
         max-height: 400px;
     }
-
+    .your-class > div.slick-list{
+      margin-bottom: 0;
+    }
+    .your-class div.slick-slide{
+      padding: 15px;
+    }
+    .slick-arrow{
+      top: auto;
+      bottom: 10%;
+    }
     .GRAPHIC_text h4 {
         font-size: 15px;
     }
