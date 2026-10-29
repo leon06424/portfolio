@@ -556,11 +556,13 @@ section {
         left: 5%;
     }
 
-    .slide_prev_button {
+    .slide_prev_button,
+    .slick-prev {
         left: 4%;
     }
 
-    .slide_next_button {
+    .slide_next_button,
+    .slide_next {
         right: 4%;
     }
 
@@ -648,11 +650,13 @@ section {
         }
     }
 
-    .slide_prev_button {
+    .slide_prev_button, 
+    .slide_prev {
         left: 20px;
     }
 
-    .slide_next_button {
+    .slide_next_button,
+    .slide_next {
         right: 20px;
     }
 }
@@ -901,7 +905,7 @@ section {
         margin-top: 20px;
     }
 
-    .slide_item.item1 img,
+    /* .slide_item.item1 img,
     .slide_item.item2 img,
     .slide_item.item3 img,
     .slide_item.item4 img,
@@ -916,7 +920,7 @@ section {
         right: auto;
         object-fit: contain;
         order: 2;
-    }
+    } */
 
     .slide_item img:hover {
         animation: none;
@@ -1142,11 +1146,13 @@ section {
         background-size: contain;
     }
 
-    .slide_prev_button {
+    .slide_prev_button,
+    .slide_prev {
         left: 15px;
     }
 
-    .slide_next_button {
+    .slide_next_button,
+    .slide_next {
         right: 15px;
     }
 }
@@ -1264,13 +1270,15 @@ section {
         height: 42px;
     }
 
-    .slide_prev_button {
+    /* .slide_prev_button,
+    .slide_prev {
         left: calc(50% - 55px);
     }
 
-    .slide_next_button {
+    .slide_next_button,
+    .slide_next {
         right: calc(50% - 55px);
-    }
+    } */
 
     /* 그래픽 카드를 한 줄에 하나씩 */
     .your-class {

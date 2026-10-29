@@ -393,6 +393,32 @@
                 slidesToScroll: 1, //한개씩 움직이기
                 autoplay: false, //자동움직이게 하기 true , 수동은 false
                 autoplaySpeed: 5000, //5초마다
+
+                infinite: true,
+
+                responsive: [
+                    {
+                        breakpoint: 1200, // 1200px 이하
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768, // 768px 이하
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480, // 480px 이하
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
 
             //slick
