@@ -631,6 +631,8 @@ section {
         object-fit: contain;
     }
 
+    .your-class > div.slick-list{width: 100%;}
+
     .GRAPHIC_text h4 {
         width: 100%;
     }
@@ -1097,7 +1099,8 @@ section {
     }
 
     .foot_left input {
-        max-width: 100%;
+        max-width: fit-content;
+        padding: 2px 5px;
     }
 
     .foot_left p img {
@@ -1120,7 +1123,7 @@ section {
         position: relative;
         top: auto;
         right: auto;
-        padding: 10px;
+        padding: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
