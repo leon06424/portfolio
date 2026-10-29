@@ -1017,7 +1017,7 @@ section {
 
     /* 그래픽 포트폴리오 */
     .section4 {
-        margin: 25px 0;
+        margin: 0 0 25px 0;
         padding: 0;
     }
 
@@ -1222,7 +1222,7 @@ section {
     .slide_button {
         width: 45px;
         height: 45px;
-        bottom: 18%;
+        bottom: 11%;
         background-size: contain;
     }
 
@@ -1326,11 +1326,6 @@ section {
         font-size: 12px;
     }
 
-    .slide_item {
-        min-height: 550px;
-        padding: 20px 5% 90px;
-    }
-
     .slide_txt h4 {
         font-size: 18px;
     }
@@ -1416,8 +1411,8 @@ section {
 
     .slide_item {
         gap: 15px;
-        padding: 20px 15px 85px;
-        min-height: 550px;
+        padding: 20px 15px 50px;
+        min-height: 500px;
     }
 
     .slide_item .img_box {
