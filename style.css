@@ -176,9 +176,7 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
   .slide_txt p{font-size: 16px; 
     /* position: absolute; top: 100px; */
   }
-  .slide_txt .port_btn{
-    /* position: absolute; top: 150px; left: -100px; */
-  }
+
   .slide_txt .port_btn a{
     margin-left: 0px;
   }
@@ -324,8 +322,8 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
     z-index: 10;
     width: 60px;
     height: 60px;
-    background: url("./img/prev.png") no-repeat center center;
-    background-size: contain;
+    background: url("./img/prev.png") no-repeat center center !important;
+    background-size: contain !important;
 }
 
 /* Slick 다음 버튼 */
@@ -334,8 +332,8 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
     z-index: 10;
     width: 60px;
     height: 60px;
-    background: url("./img/next.png") no-repeat center center;
-    background-size: contain;
+    background: url("./img/next.png") no-repeat center center !important;
+    background-size: contain !important;
 }
 
 /* Slick 기본 화살표 모양 제거 */
@@ -348,14 +346,14 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
 /* 마우스 호버 시에도 이미지 유지 */
 .your-class .slick-prev:hover,
 .your-class .slick-prev:focus {
-    background: url("./img/prev.png") no-repeat center center;
-    background-size: contain;
+    background: url("./img/prev.png") no-repeat center center !important;
+    background-size: contain !important;
 }
 
 .your-class .slick-next:hover,
 .your-class .slick-next:focus {
-    background: url("./img/next.png") no-repeat center center;
-    background-size: contain;
+    background: url("./img/next.png") no-repeat center center !important;
+    background-size: contain !important;
 }
 
 /* 자세히 보기 모달창 */
@@ -641,10 +639,10 @@ section {
     .port_btn a {
         margin-left: 0;
     }
-    .slick-prev{
+    .your-class slick-prev{
       left: 4%;
     }
-    .slick-next {
+    .your-class slick-prev {
       right: 4%;
     }
 
@@ -714,10 +712,10 @@ section {
         right: 20px;
     }
 
-    .slick-prev{
+    .your-class slick-prev{
       left: 20px;
     }
-    .slick-next {
+    .your-class slick-prev {
       right: 20px;
     }
 }
@@ -1036,10 +1034,10 @@ section {
         margin: 0;
         font-size: 13px;
     }
-    .slick-prev,
-    .slick-next {
-      width: 55px;
-      height: 55px;
+    .your-class slick-prev,
+    .your-class slick-prev {
+      width: 55px !important;
+      height: 55px !important;
     }
     /* 모달 */
     .image_modal {
@@ -1220,10 +1218,10 @@ section {
         right: 15px;
     }
 
-    .slick-prev{
+    .your-class slick-prev{
       left: 15px;
     }
-    .slick-next {
+    .your-class slick-prev {
       right: 15px;
     }
 }
@@ -1349,8 +1347,8 @@ section {
     .slide_next {
         right: calc(50% - 55px);
     } */
-    .slick-prev,
-    .slick-next {
+    .your-class slick-prev,
+    .your-class slick-prev {
       width: 42px;
       height: 42px;
     }
