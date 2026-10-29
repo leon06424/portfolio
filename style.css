@@ -1400,7 +1400,11 @@ section {
     }
 
     .foot_right > ul {
+      width: 100%;
         justify-content: center;
+    }
+    .foot_right ul.hidden2 li a{
+      font-size: 10px;
     }
 
     .bottom_logo {
