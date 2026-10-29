@@ -168,13 +168,13 @@ ul.tab_con li p{padding: 30px; text-align: justify;}
   .slide_item.item5 img{object-fit: contain; width: 800px; height: 1292px; display: block; position: absolute;top: 0; left: 700px;animation-play-state: paused;}
   .slide_item.item6 img{object-fit: contain; width: 800px; height: 982px; display: block; position: absolute;top: 0; left: 700px;animation-play-state: paused;} */
   .slide_item img{width: 800px; height: 1500px; display: block; object-fit: contain; position: absolute; top: 0; left: 700px; animation-play-state: paused;}
-  .slide_item.item1 img{height: 1051px;}
-  .slide_item.item2 img{height: 3918px;}
+  .slide_item.item1 img{height: 800px;}
+  /* .slide_item.item2 img{height: 3918px;}
   .slide_item.item3 img{height: 3761px;}
   .slide_item.item4 img{height: 10824px;}
   .slide_item.item5 img{height: 3399px;}
   .slide_item.item6 img{height: 3204px;}
-  .slide_item.item7 img{height: 7945px;}
+  .slide_item.item7 img{height: 7945px;} */
   .slide_item img:hover{animation: slideAnimation 5s linear infinite;}
   .slide_item.item4 img:hover{animation: slideAnimation 0s linear infinite;}
     @keyframes slideAnimation {
