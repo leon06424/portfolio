@@ -1007,6 +1007,7 @@ section {
     /* 그래픽 포트폴리오 */
     .section4 {
         margin: 25px 0;
+        padding: 0;
     }
 
     .your-class div {
